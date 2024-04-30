@@ -10,6 +10,7 @@ function usePlanets() {
     try {
       const fetchedPlanets = await httpGetPlanets();
       setPlanets(fetchedPlanets);
+      console.log("fetchedPlanets",fetchedPlanets);
     } catch (error) {
       setError(error); // Store the error if fetching fails
     }
